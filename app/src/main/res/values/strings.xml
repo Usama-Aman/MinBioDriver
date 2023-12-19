@@ -1,0 +1,310 @@
+<resources>
+
+    <string name="places_api_billing_key" translatable="false">AIzaSyAald9D0wdy86pmbTX1vWc9KMc-FXx3wzQ</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAald9D0wdy86pmbTX1vWc9KMc-FXx3wzQ</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoidXNhbWEtYW1hbiIsImEiOiJjazU1NGtyY2QwYTZiM2VtcW9wamQ3NmRkIn0.owDuMMZwfgXLED5Hry17yw</string>
+    <string name="style_URL" translatable="false">mapbox://styles/usama-aman/ck56fbfoo08f21cp4uzcyjfj5</string>
+
+
+    <!--Splash Screen-->
+    <string name="parnership">Parnership</string>
+
+
+    <!--                                            Login In -->
+    <string name="touch_rear_sensor">Touch your rear sensor to login using finger print.</string>
+    <string name="enable_biometric_login">Enable biometric login</string>
+    <string name="signInto_log_in">Login</string>
+    <string name="register_fingerprint">Register at least one fingerprint in Settings</string>
+    <string name="signInEmail">Email</string>
+    <string name="sign_in_title">Connection</string>
+    <string name="signInPassword">Password</string>
+    <string name="signInDontHaveAnAccount">Don\'t have an account?</string>
+    <string name="signInRegisterNow">Register now</string>
+    <string name="signInforgot_your_password">Forgot your password?</string>
+    <string name="blocked_by_minbio">You are blocked by VIC WSP</string>
+    <string name="please_login_at_least_one_time">Please log in at least one time to use finger print</string>
+    <string name="login_error_message_please_enter_email_address">Please enter email address.</string>
+
+    <string name="login_error_message_invalidEmail">Email is not valid</string>
+    <string name="login_error_message_enter_password">Please enter password</string>
+    <string name="login_create_an_account">Create an account</string>
+
+
+    <!--                                            Email confirmation      -->
+    <string name="emailConfirmationTitle">Confirmation</string>
+    <string name="emailConfirmationMessage">A confirmation email has been sent to you to validate your account. Please consult your mailbox and follow the indicated instructions.</string>
+    <string name="emailConfirmationyou_have_not_received_the_mail">You have not received the mail?</string>
+    <string name="emailConfirmationSend_me_back">Send</string>
+    <string name="emailConfirmationTo_log_in">Log In</string>
+
+
+    <!--                                        Otp Confirmation -->
+    <string name="otpConfirmationTitle">Confirmation</string>
+    <string name="otpConfirmationMessage">A confirmation SMS has just been sent to you to validate your account. Please enter the 4 digits:</string>
+    <string name="otp_you_have_not_received_the_sms">You have not received the SMS?</string>
+    <string name="otpConfirmationSend_me_back">Send</string>
+    <string name="otpConfirmationTo_log_in">Log In</string>
+    <string name="otp_error_please_enter_the_verification_code">Please enter the verification code</string>
+
+
+    <!--                                            Reset Password Screen  -->
+    <string name="OTP">OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="newPassword">New Password</string>
+    <string name="resetPasswordPassword_confirmation">Confirm Password</string>
+    <string name="reset_error_message_enter_password">Please enter password</string>
+    <string name="reset_error_password_not_same">Confirm password does not match.</string>
+    <string name="reset_error_please_enter_the_verification_code">Please enter the verification code</string>
+    <string name="reset_error_enter_password_confirmation">Please enter confirm password</string>
+
+
+    <!--                                Forgot Password         -->
+    <!--    <string name="forgotPasswordEmail">Email</string>-->
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgotPasswordSend_me">Send</string>
+    <string name="fp_error_message_please_enter_email_address">Please enter email address.</string>d
+    <string name="fp_error_message_invalidEmail">Email is not valid</string>
+    <string name="forgotPasswordEmailOrPhone">Email or Mobile number </string>
+    <string name="forgotPasswordErrorMessageEnterEmail">Please enter email address or mobile number.</string>
+    <string name="forgotPasswordFormatNote">Note: Mobile number format must be like +33109758351</string>
+
+
+    <!--                                              Sign Up Screen -->
+    <string name="signUpTitle">Register</string>
+    <string name="signUpName">First Name</string>
+    <string name="signUpLastName">Last Name</string>
+    <string name="signUpEmail">Email address</string>
+    <string name="signUpPhone">Your Phone number</string>
+    <string name="signUpPassword">Password</string>
+    <string name="SignUpAlreadyHaveAnAccount">Already have an account?</string>
+    <string name="signUpLoginNow"> Login now</string>
+    <string name="signUpPassword_confirmation">Confirm Password</string>
+    <string name="signUpCreate_my_account">Register now</string>
+    <string name="signUpAlready_have_an_account">Already have an account?</string>
+    <string name="signUpTo_log_in">Log In</string>
+    <string name="signUp_error_message_please_enter_email_address">Please enter email address.</string>
+    <string name="SignUpAcceptTermsText">I accept the terms and conditions</string>
+
+    <string name="signUp_error_message_enter_password">Please enter password</string>
+    <string name="signUp_error_enter_name">Please enter first name</string>
+    <string name="signUp_error_enterLastName">Please enter last name</string>
+    <string name="signUp_error_please_enter_phone_number">Please enter phone number</string>d
+    <string name="signUp_error_password_length">The password must be atleast 8 characters</string>
+    <string name="signUp_error_enter_password_confirmation">Please enter confirm password</string>
+    <string name="signUp_error_confirmation_password_length">Password confirmation must be atleast 8 characters</string>
+    <string name="signUp_error_password_not_same">Confirm password does not match.</string>
+    <string name="signUp_error_privacy">Please accept terms and condition.</string>
+
+
+    <!--                                               My Orders Screen  -->
+    <string name="my_orders">My Orders</string>
+    <string name="amount">AMOUNT</string>
+    <string name="merchant">MERCHANT</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="completed_status">Completed</string>
+    <string name="buyer_label">Buyer</string>
+    <string name="Ongoing_Tab">Ongoing</string>
+    <string name="Available_Tab">Available</string>
+    <string name="Delivered_Tab">Delivered</string>
+
+
+    <!--                                Profile Settings Screen -->
+    <string name="truck_plate">TRUCK PLATE</string>
+    <string name="profile_first_name">First name</string>
+    <string name="profile_last_name">Last Name</string>
+    <string name="profile_number">Number</string>
+    <string name="payment_by">Payment by</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_company">Company</string>
+    <string name="proof_of_liscense_id">PROOF OF LICENSE ID</string>
+    <string name="proof_of_truck_id">PROOF OF TRUCK ID</string>
+    <string name="proof_of_insurance">PROOF OF INSURANCE</string>
+    <string name="id_card_front">ID CARD FRONT</string>
+    <string name="id_card_back">ID CARD BACK</string>
+    <string name="profile_phone">Phone</string>
+    <string name="siret">Siret</string>
+    <string name="truck_detail">TRUCK Details</string>
+    <string name="select_the_language_you_want_to_use_in_the_app">Select the language you want to use in the app.</string>
+    <string name="french">French</string>
+    <string name="english">English</string>
+    <string name="exit_app">Are you sure you want to exit?</string>
+    <string name="change_language">Change Language</string>
+    <string name="btn_save">Save Changes</string>
+    <string name="profile_email">Email</string>
+    <string name="bank_detail">Bank Details</string>
+    <string name="profile_password">Password</string>
+    <string name="profile_retype_password">Retype password</string>
+    <string name="version">Version</string>
+    <string name="account_error_message_please_enter_email_address">Please enter email address.</string>
+    <string name="account_error_message_invalidEmail">Email is not valid</string>
+    <string name="account_error_enter_pre_name">Please enter last name</string>
+    <string name="account_error_enter_name">Please enter name</string>
+    <string name="account_error_please_enter_phone_number">Please enter phone number</string>d
+    <string name="account_error_enter_address">Please enter address</string>
+    <string name="account_error_password_length">The password must be atleast 8 characters</string>
+    <string name="account_error_confirmation_password_length">Password confirmation must be atleast 8 characters</string>
+    <string name="account_error_password_not_same">Confirm password does not match.</string>
+    <string name="account_error_please_select_profile">Please select profile</string>
+    <string name="account_error_please_select_truck_plate">Please select truck plate</string>
+    <string name="account_error_please_select_truck_id">Please select truck id</string>
+    <string name="account_error_please_select_id_card_front">Please select id card front</string>
+    <string name="account_error_please_select_id_card_back">Please select id card back</string>
+    <string name="account_error_please_select_license">Please select license id</string>
+    <string name="account_error_please_select_insurance">Please select proof of insurance</string>
+    <string name="account_settings_title">profile</string>
+    <string name="current_language_english">Your current language is already English</string>
+    <string name="current_language_french">Your current language is already French</string>
+    <string name="accountPrivacyText">I have read and accept the terms and conditions</string>
+
+
+    <!--                                        Bank Screen  -->
+    <string name="good">Good</string>
+    <string name="bank_address">Bank address</string>
+    <string name="bank_state">State</string>
+    <string name="upload_bank_detail_file">Upload bank details file</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_city">City</string>
+    <string name="bank_zip">Zip</string>
+    <string name="bank_account_name">Account name</string>
+    <string name="bank_account_number">Account no</string>
+    <string name="bank_routing_code">Routing code</string>
+    <string name="bank_swift_number">Swift number</string>
+    <string name="bank_iban">IBAN</string>
+    <string name="bank_first_name">First name</string>
+    <string name="bank_last_name">Last Name</string>
+    <string name="bank_number">Number</string>
+    <string name="bank_company">Company</string>
+    <string name="bank_slect_origin">Select Origin</string>
+    <string name="bank_country">Country</string>
+    <string name="bank_submit">Submit</string>
+    <string name="bank_btn_save">Save</string>
+    <string name="bank_error_enter_name">Please enter bank name</string>
+    <string name="bank_error_enter_bank_detail_file">Please upload bank detail file</string>
+    <string name="bank_error_enter_country">Please enter country name</string>
+    <string name="bank_error_enter_bank_address">Please enter bank address</string>
+    <string name="bank_error_enter_state">Please enter state</string>
+    <string name="bank_error_enter_city">Please enter city</string>
+    <string name="bank_error_enter_zip">Please enter zip code</string>
+    <string name="bank_error_enter_account_name">Please enter account name</string>
+    <string name="bank_error_enter_account_number">Please enter account number</string>
+    <string name="bank_error_enter_routing_code">Please enter routing code</string>
+    <string name="bank_error_enter_swift_number">Please enter swift number</string>
+    <string name="bank_error_enter_iban">Please enter iban</string>
+
+
+    <!--                        Order Detail screen         -->
+    <string name="order_detail_first_name">First name</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="order_number">Order number</string>
+    <string name="date_of_the_order">Order date</string>
+    <string name="order_detail_address">Address</string>
+    <string name="order_detail_phone">Phone</string>
+    <string name="order_detail_email">Email</string>
+    <string name="order_detail_status">Status</string>
+    <string name="feedback">Feedback</string>
+    <string name="orderStatusCompleted">Completed</string>
+    <string name="pick_up">Pick Up</string>
+
+    <!--                                   Maps Screen             -->
+    <string name="please_accept_delivery_first">Please accept the delivery first.</string>
+
+    <!--                                     Driver Feedback    -->
+    <string name="driver_feedback_submit">Submit</string>
+    <string name="driver_feed_back">Driver feedback</string>
+    <string name="your_compliments">Your compliments</string>
+
+
+    <!--                                      Summary Screen        -->
+    <string name="view_on_map">View on map</string>
+    <string name="summary">Summary</string>
+    <string name="buyer_details">Buyer Details</string>
+    <string name="vendor_details">Vendor Details</string>
+
+
+    <!--                                        General Strings + Error messages -->
+    <string name="currently_there_is_no_data">Currently there is not data. </string>
+    <string name="total_price">Total Price</string>
+    <string name="price">Price</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="app_name">MINBIO DRIVER</string>
+    <string name="cancel">Cancel</string>
+    <string name="loading">Loading</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="loading_please_wait">Loading. Please wait…</string>
+    <string name="something_is_not_right">Something isn\'t right.</string>
+    <string name="product">Product</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_ht">Total HT</string>
+    <string name="tva">TVA</string>
+    <string name="total_tcc">Total TTC</string>
+    <string name="amount_ht">Amount HT</string>
+    <string name="app_rating">App rating</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="close_spinner">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="done">Done</string>
+    <string name="permission_denied">Permission denied.</string>
+    <string name="add_shipping_address">Please add delivery address</string>
+    <string name="ok">OK</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="accept">Accept</string>
+    <string name="completed">Complete</string>
+    <string name="reject">Reject</string>
+    <string name="discount">Discount</string>
+    <string name="logout_app">Are you sure  to log out?</string>
+    <string name="minbio_running">MinBio Running</string>
+
+    <!--                                        Order Navigation Maps Screen -->
+    <string name="start_navigation">Start Navigation</string>
+    <string name="directions">Directions</string>
+
+
+    <!--                                    signature View -->
+    <string name="signature_done">Done</string>
+    <string name="signature_clear">Clear</string>
+    <string name="signature_header_label">Write Signature</string>
+
+
+    <!--                                        Nego  Chat  screen-->
+    <string name="hint_type_your_message">Type your message</string>
+    <string name="slide_to_cancel">Slide To Cancel</string>
+
+    <!--                                    Transaction History   -->
+    <string name="transaction_history_title">Transaction History</string>
+    <string name="pending_balance_label_transaction_history">Pending Balance</string>
+    <string name="total_balance_label_transaction_history">Total Balance</string>
+    <string name="date_transaction_history">DATE</string>
+    <string name="id_location_transaction_history">ID/Location</string>
+    <string name="amount_transaction_history">Amount</string>
+    <string name="status_transaction_history">Status</string>
+    <string name="status_paid_transaction_history">Paid</string>
+    <string name="status_unpaid_transaction_history">Unpaid</string>
+
+    <!--                                      Support Screen     -->
+    <string name="support_title">Support</string>
+    <string name="topic_support">Topic</string>
+    <string name="email_support">Email</string>
+    <string name="issue_support">Issue</string>
+    <string name="hint_issue_support">"Enter issue"</string>
+    <string name="select_topic_support">Select Topic</string>
+    <string name="enter_issue_support">Please enter your issue</string>
+    <string name="are_you_to_call">Are you sure you want to call?</string>
+
+
+    <!--    Complaint Screen    -->
+
+    <string name="msg_please_add_comment_first">Please add comment first</string>
+    <string name="my_complaints">Complain</string>
+    <string name="tvAssigned">Assigned - </string>
+    <string name="order_status">Status</string>
+
+
+    <!--    Support Screen    -->
+    <string name="my_support">Support</string>
+
+</resources>

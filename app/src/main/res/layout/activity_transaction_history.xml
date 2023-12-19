@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRelative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@color/splashColor"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <ImageView
+
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_logo" />
+
+    </RelativeLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/transactionSwipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRelative">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/transactionMainConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarRelative">
+
+
+            <TextView
+                android:id="@+id/transactionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/transaction_history_title"
+                android:textAllCaps="true"
+                android:textColor="@color/splashColor"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/transactionDataConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/transactionTitle">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.03" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.97" />
+
+
+                <TextView
+                    android:id="@+id/pendinglabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/pending_balance_label_transaction_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gstart"
+                    app:layout_constraintRight_toRightOf="@id/gcenter"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPendingBalanceTransaction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_15sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gstart"
+                    app:layout_constraintRight_toRightOf="@id/gcenter"
+                    app:layout_constraintTop_toBottomOf="@id/pendinglabel" />
+
+
+                <TextView
+                    android:id="@+id/totalBalancelabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/total_balance_label_transaction_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gcenter"
+                    app:layout_constraintRight_toRightOf="@id/gend"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTotalBalanceTransaction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/signUpButtonColor"
+                    android:textSize="@dimen/_15sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gcenter"
+                    app:layout_constraintRight_toRightOf="@id/gend"
+                    app:layout_constraintTop_toBottomOf="@id/pendinglabel" />
+
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/catalogueBackground"
+                    app:layout_constraintBottom_toTopOf="@id/divider"
+                    app:layout_constraintLeft_toLeftOf="@id/gcenter"
+                    app:layout_constraintRight_toRightOf="@id/gcenter"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="tvPendingBalanceTransaction,tvTotalBalanceTransaction" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/catalogueBackground"
+                    app:layout_constraintLeft_toLeftOf="@id/gcenter"
+                    app:layout_constraintRight_toRightOf="@id/gcenter"
+                    app:layout_constraintTop_toBottomOf="@id/b" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gmid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gmid2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gmid3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+
+                <TextView
+                    android:id="@+id/l1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/date_transaction_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gstart"
+                    app:layout_constraintRight_toRightOf="@id/gmid1"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+
+                <TextView
+                    android:id="@+id/l2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/id_location_transaction_history"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gmid1"
+                    app:layout_constraintRight_toRightOf="@id/gmid2"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+
+                <TextView
+                    android:id="@+id/l3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/amount_transaction_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gmid2"
+                    app:layout_constraintRight_toRightOf="@id/gmid3"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+                <TextView
+                    android:id="@+id/l4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/status_transaction_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/gmid3"
+                    app:layout_constraintRight_toRightOf="@id/gend"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="l1,l2,l3,l4" />
+
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/quantum_grey"
+                    app:layout_constraintLeft_toLeftOf="@id/gstart"
+                    app:layout_constraintRight_toRightOf="@id/gend"
+                    app:layout_constraintTop_toBottomOf="@id/b2" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerTransaction"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/gstart"
+                    app:layout_constraintRight_toRightOf="@id/gend"
+                    app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/ivListNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/product"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvListNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/currently_there_is_no_data"
+        android:textColor="@color/splashColor"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivListNull" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

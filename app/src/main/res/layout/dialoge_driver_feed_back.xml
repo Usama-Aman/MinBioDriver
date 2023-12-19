@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/row_fotter"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/tvFeedBackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/driver_feed_back"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/splashColor"
+            android:textSize="@dimen/large22sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/good"
+                android:textSize="@dimen/medium16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <!--            <com.willy.ratingbar.ScaleRatingBar-->
+            <!--                android:id="@+id/ratingBarFeedBack"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="@dimen/_40sdp"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:clickable="true"-->
+            <!--                app:srb_clearRatingEnabled="true"-->
+            <!--                app:srb_drawableEmpty="@drawable/ic_star_unsl"-->
+            <!--                app:srb_drawableFilled="@drawable/ic_star_sl"-->
+            <!--                app:srb_minimumStars="0"-->
+            <!--                app:srb_numStars="5"-->
+            <!--                app:srb_rating="0"-->
+            <!--                app:srb_scrollable="true"-->
+            <!--                app:srb_starHeight="@dimen/_30sdp"-->
+            <!--                app:srb_starPadding="@dimen/_5sdp"-->
+            <!--                app:srb_starWidth="@dimen/_30sdp"-->
+            <!--                app:srb_stepSize="1" />-->
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBarFeedBack"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:numStars="5" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/etCompliment"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/gre_border"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:hint="@string/your_compliments"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/splashColor"
+                android:textColorHint="@color/splashColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintHorizontal_bias="1.0" />
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnRatingDone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_button_size"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/round_button"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/i"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_tick_yes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/bText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/driver_feedback_submit"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1066982764053",
+    "firebase_url": "https://vic-driver.firebaseio.com",
+    "project_id": "vic-driver",
+    "storage_bucket": "vic-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066982764053:android:2a5f364df6ab7360f8281c",
+        "android_client_info": {
+          "package_name": "com.vic.vicdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066982764053-6obni7jnhhtvcldkg407seat5qsm5pb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnksZPkoyzDqKSzgJuyK70mtoAiYwM-Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066982764053-6obni7jnhhtvcldkg407seat5qsm5pb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
